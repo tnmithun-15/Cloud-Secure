@@ -18,8 +18,8 @@ from datetime import datetime
 
 # AWS Configuration
 AWS_REGION = "us-east-1"  # Example: "us-east-1"
-LOG_GROUP_NAME = "Cyber"
-LOG_STREAM_NAME = f"Mycyber-{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
+LOG_GROUP_NAME = "enter your cloud watch group name"
+LOG_STREAM_NAME = #f"Mycyber-{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
 
 # Initialize CloudWatch client
 cloudwatch_client = boto3.client("logs", region_name=AWS_REGION)
@@ -75,9 +75,9 @@ cloudwatch_handler.setFormatter(formatter)
 logger.addHandler(cloudwatch_handler)
 
 # Email configuration
-sender_email = "mithun.tn2405@gmail.com"
-receiver_email = "tn.mithun2405@gmail.com"
-email_password = "twlq ljaj imum cegt"
+sender_email = "sender mail id"
+receiver_email = "reciver mail id"
+email_password = "app passowrd of Google account"
 
 # Constants
 FAILED_ATTEMPT_THRESHOLD = 5
